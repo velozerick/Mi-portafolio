@@ -58,68 +58,41 @@ const translations = {
 };
 
 const languageToggle = document.getElementById('language-toggle');
-let currentLanguage = 'es';  // El idioma predeterminado es español
+let currentLanguage = 'es'; // Empieza en español
 
 languageToggle.addEventListener('click', () => {
     const newLanguage = currentLanguage === 'es' ? 'en' : 'es';
-
-    // Cambiar el texto basado en data-translate
-    document.querySelectorAll('[data-translate]').forEach(element => {
-        const key = element.getAttribute('data-translate'); // Utiliza el atributo data-translate como clave
-        if (translations[newLanguage][key]) {
-            element.textContent = translations[newLanguage][key];  // Cambia el texto por su traducción
-        }
+    document.querySelectorAll('[data-translate]').forEach((element) => {
+        element.textContent = translations[newLanguage][element.textContent.trim()];
     });
-
-    // Cambiar el texto de tipografía también
-    const typingElement = document.getElementById('typing-text');
-    const newText = translations[newLanguage]["Hola, soy Erick Veloz"];
-    startTyping(newText);  // Llamar a la función de tipografía con el nuevo texto
-    
     currentLanguage = newLanguage;
-    languageToggle.textContent = currentLanguage === 'es' ? 'English' : 'Español';  // Cambia el texto del botón
+    languageToggle.textContent = currentLanguage === 'es' ? 'English' : 'Español';
 });
 
-// Tipografía dinámica
-let index = 0;
-let text = translations['es']["Hola, soy Erick Veloz"];  // Texto inicial en español
+
+
+
+
+
+const text = "¡Hola, Soy Erick Veloz!";
 const typingElement = document.getElementById('typing-text');
+let index = 0;
 
 function typeText() {
     if (index < text.length) {
         typingElement.innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeText, 170);
+        setTimeout(typeText, 150);
     } else {
         setTimeout(() => {
             typingElement.innerHTML = '';
             index = 0;
             typeText();
-        }, 8000);
+        }, 5000);
     }
 }
 
-function startTyping(newText) {
-    text = newText;
-    typingElement.innerHTML = '';
-    index = 0;
-    typeText();
-}
-
-window.onload = () => startTyping(text);
-
-
-
-
-
-
-
-
-
-
-
-
-
+window.onload = typeText;
 
 
 
