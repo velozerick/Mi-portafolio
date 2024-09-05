@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Erick Veloz - Portafolio</title>
+    <link rel="stylesheet" href="portafolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!-- Botón de cambio de idioma -->
+    <button id="language-toggle">English</button>
+    
+    <div class="nav-toggle">
+        <i class="fas fa-bars" id="nav-icon"></i> 
+    </div>
+
+    <!-- Barra de navegación -->
+    <nav id="navbar" class="nav"> 
+        <ul>
+            <li><a href="#inicio" data-translate="Inicio">Inicio</a></li>
+            <li><a href="#habilidades" data-translate="Habilidades">Habilidades</a></li>
+            <li><a href="#proyectos" data-translate="Proyectos">Proyectos</a></li>
+            <li><a href="#contacto" data-translate="Contáctame">Contáctame</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio">
+        <!-- Íconos sociales centrados en la parte superior -->
+        <div class="social-icons">
+            <a href="https://github.com/velozerick" target="_blank" class="icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" class="icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="intro-container">
+            <div>
+                <!-- Título para "Hola, soy Erick Veloz" con traducción -->
+                <h1 class="intro-title" id="typing-text" data-translate=""> </h1> 
+                <p class="intro-text" data-translate="Soy Ingeniero en Sistemas Computacionales con especialización en desarrollo web y aplicaciones.">
+                    Soy Ingeniero en Sistemas Computacionales con especialización en desarrollo web y aplicaciones.
+                </p>
+                <p class="intro-text" data-translate="Cuento con experiencia en programación orientada a objetos, bases de datos y diseño de soluciones eficientes tanto en frontend como en backend.">
+                    Cuento con experiencia en programación orientada a objetos, bases de datos y diseño de soluciones eficientes tanto en frontend como en backend.
+                </p>
+            </div>
+            <img src="img/IMG_20230808_163641-removebg-preview.png" alt="Foto" id="foto-inicio">
+        </div>
+        
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="habilidades-section">
+        <h2 data-translate="Habilidades Técnicas">Habilidades Técnicas</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-php"></i>
+                <p>PHP</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-git-alt"></i>
+                <p>Git</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <p>VS Code</p>
+            </div>
+        </div>
+
+        <!-- Sección Otras Habilidades -->
+<div class="additional-skills">
+    <h3 data-translate="Otras habilidades">Otras habilidades</h3>
+    <p class="intro-texto" data-translate="Soy una persona meticulosa con un enfoque metódico en la resolución de problemas. Mi capacidad para analizar y razonar me permite considerar diversos escenarios al abordar desafíos. Mi profundo interés por la tecnología, la lectura y la ciencia impulsa mi motivación y me mantiene actualizado sobre las últimas tendencias en desarrollo web y programación.">
+        Soy una persona <strong>meticulosa</strong> con un enfoque metódico en la resolución de problemas. Mi capacidad para <strong>analizar</strong> y 
+        razonar me permite considerar diversos escenarios al abordar desafíos. Mi profundo interés por la <strong>tecnología</strong>, 
+        la lectura y la ciencia impulsa mi motivación y me mantiene actualizado sobre las últimas tendencias en 
+        <strong>desarrollo web</strong> y <strong>programación</strong>.
+    </p>
+
+    <p class="skills-texto" data-translate="Me destaco en el uso de tecnologías como HTML5, CSS3, JavaScript, y PHP, y he liderado proyectos utilizando Git para colaborar de manera eficiente en equipos de desarrollo. Mi curiosidad y autodisciplina me han permitido obtener certificaciones en áreas clave como programación orientada a objetos y CS50AI: CS50's Introduction to Artificial Intelligence with Python.">
+        Me destaco en el uso de tecnologías como <strong class="highlight">HTML5</strong>, <strong class="highlight">CSS3</strong>, 
+        <strong class="highlight">JavaScript</strong>, y <strong class="highlight">PHP</strong>, y he liderado proyectos utilizando 
+        <strong>Git</strong> para colaborar de manera eficiente en equipos de desarrollo. Mi curiosidad y autodisciplina me han permitido
+        obtener certificaciones en áreas clave como <strong>programación orientada a objetos</strong> y 
+        <strong class="highlight">CS50AI: CS50's Introduction to Artificial Intelligence with Python</strong>.
+    </p>
+</div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="proyectos-section">
+        <h2 data-translate="Proyectos Recientes">Proyectos Recientes</h2>
+        <div class="projects-container">
+            <!-- Proyecto 1 - Astroveloxer -->
+            <div class="project-card">
+                <a href="https://astroveloxer.com" target="_blank">
+                    <img src="img/astroveloxer.png" alt="Astroveloxer" class="project-image">
+                </a>
+                <h3>Astroveloxer</h3>
+                <p data-translate="Página web enfocada a la astrofotografía.">Página web enfocada a la astrofotografía.</p>
+            </div>
+
+            <!-- Proyecto 2 - Página web para salón de fiestas -->
+            <div class="project-card">
+                <a href="https://tu-url-salon.com" target="_blank">
+                    <img src="img/salon.png" alt="Salón de fiestas" class="project-image">
+                </a>
+                <h3>SPLASHGARDEN</h3>
+                <p data-translate="Plataforma para reservas y diversión en eventos.">Plataforma para reservas y diversión en eventos.</p>
+            </div>
+
+            <!-- Proyecto 3 - Página web de cafetería -->
+            <div class="project-card">
+                <a href="https://tu-url-cafeteria.com" target="_blank">
+                    <img src="img/dulce.png" alt="Cafetería" class="project-image">
+                </a>
+                <h3>Página web de cafetería</h3>
+                <p data-translate="Sitio web de cafetería con menús, promociones y pedidos en línea.">Sitio web de cafetería con menús, promociones y pedidos en línea.</p>
+            </div>
+
+            <!-- Proyecto 4 - MRS Monitoreo y Rendimiento -->
+            <div class="project-card">
+                <a href="https://tu-url-mrs.com" target="_blank">
+                    <img src="img/IMG_4581.PNG" alt="MRS" class="project-image">
+                </a>
+                <h3>MRS - Monitoreo y rendimiento de software</h3>
+                <p data-translate="Aplicación web personalizada para monitorear el rendimiento de software.">Aplicación web personalizada para monitorear el rendimiento de software.</p>
+            </div>
+
+            <!-- Proyecto 5 - VELOXERNET Domótica -->
+            <div class="project-card">
+                <a href="https://tu-url-veloxernet.com" target="_blank">
+                    <img src="img/veloxernet.jpg" alt="VELOXERNET" class="project-image">
+                </a>
+                <h3>VELOXERNET - Domótica</h3>
+                <p data-translate="Aplicación para el control remoto de dispositivos de hogar inteligente, desarrollada para manejar luces y puertas.">Aplicación para el control remoto de dispositivos de hogar inteligente, desarrollada para manejar luces y puertas.</p>
+            </div>
+
+            <!-- Proyecto 6 - Robot Humanoide -->
+            <div class="project-card">
+                <img src="img/IMG_4583.PNG" alt="Robot Humanoide" class="project-image">
+                <h3>Robot Humanoide</h3>
+                <p data-translate="Desarrollo de un robot humanoide programado en Python, con enfoque en movimiento autónomo y reconocimiento de comandos.">Desarrollo de un robot humanoide programado en Python, con enfoque en movimiento autónomo y reconocimiento de comandos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto-section">
+        <h2 data-translate="Contáctame">Contáctame</h2>
+        <p class="contact-description" data-translate="Estoy disponible para colaboraciones, proyectos o cualquier consulta. ¡No dudes en contactarme!">Estoy disponible para colaboraciones, proyectos o cualquier consulta. ¡No dudes en contactarme!</p>
+
+        <!-- Formulario de contacto -->
+        <form class="contact-form" action="enviar.php" method="post">
+            <input type="text" name="nombre" placeholder="Tu nombre" required data-translate="Tu nombre">
+            <input type="email" name="email" placeholder="Tu email" required data-translate="Tu email">
+            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required data-translate="Tu mensaje"></textarea>
+            <button type="submit" data-translate="Enviar mensaje">Enviar mensaje</button>
+        </form>
+
+        <!-- Redes sociales -->
+        <div class="social-icons">
+            <a href="https://github.com/velozerick" target="_blank" class="icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" class="icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
