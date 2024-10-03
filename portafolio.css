@@ -213,7 +213,7 @@ HABILIDADES
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Espaciado entre habilidades */
+    gap: 30px; /* Espaciado entre habilidades */
 }
 
 .skill {
@@ -232,12 +232,13 @@ HABILIDADES
 
 .skill p {
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #ffffff;
 }
 
 .skill:hover {
-    transform: translateY(-10px); /* Efecto hover para hacerlo atractivo */
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px rgba(100, 255, 218, 0.7);
 }
 
 .additional-skills {
@@ -317,7 +318,7 @@ MAS SOBRE MI
 .oculto {
     display: none;
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 3s ease;
 }
 
 .visible {
@@ -327,7 +328,8 @@ MAS SOBRE MI
 
 #toggle-btn {
     display: block;
-    margin: 20px auto;
+    margin: 40px auto;
+    align-items: center;
     padding: 15px 30px;
     background-color: #00aaff;
     color: #fff;
@@ -337,7 +339,7 @@ MAS SOBRE MI
     cursor: pointer;
     transition: background-color 0.4s ease, transform 0.4s ease;
     opacity: 0;
-    animation: fadeInBtn 2s forwards;
+    animation: fadeInBtn 3s forwards;
 }
 
 #toggle-btn:hover {
