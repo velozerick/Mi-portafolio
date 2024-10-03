@@ -6,6 +6,9 @@
     <title data-translate="title">Erick Veloz - Portafolio</title>
     <link rel="stylesheet" href="portafolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -39,7 +42,7 @@
     <!-- Barra de navegación -->
     <nav id="navbar" class="nav"> 
         <ul>
-            <li><a href="#inicio" data-translate="Inicio">Inicio</a></li>
+            <li><a href="#inicio" data-translate="Hello!">¡Hola!</a></li>
             <li><a href="#habilidades" data-translate="Habilidades">Habilidades</a></li>
             <li><a href="#proyectos" data-translate="Proyectos">Proyectos</a></li>
             <li><a href="#contacto" data-translate="Contáctame">Contáctame</a></li>
@@ -128,6 +131,54 @@
 </div>
     </section>
 
+
+
+
+
+    <section id="sobre-mi" class="oculto">
+        <p>A lo largo de mi carrera, he obtenido certificaciones que me han permitido expandir mis conocimientos en diversas áreas del desarrollo y tecnología. Estos logros destacan mi dedicación y compromiso con la mejora continua.</p>
+        
+        <!-- Carrusel de Certificados -->
+        <div class="certificados-container">
+            <h3>Certificaciones</h3>
+            <div class="certificados">
+                <img src="img/1.jpg" alt="Certificado 1" class="certificado" onclick="openLightbox(this)">
+                <img src="img/2.png" alt="Certificado 2" class="certificado" onclick="openLightbox(this)">
+                <img src="img/3.png" alt="Certificado 3" class="certificado" onclick="openLightbox(this)">
+                <img src="img/4.png" alt="Certificado 4" class="certificado" onclick="openLightbox(this)">
+                <img src="img/4.png" alt="Certificado 4" class="certificado" onclick="openLightbox(this)">
+                <img src="img/4.png" alt="Certificado 4" class="certificado" onclick="openLightbox(this)">
+            </div>
+        </div>
+    
+        <!-- Descripción de las certificaciones -->
+        <div class="certificaciones-info">
+            <p>Mis certificaciones incluyen Programación Orientada a Objetos, Desarrollo Web Full Stack, y Domótica, entre otras. Cada una ha sido clave en el crecimiento de mi carrera y en mi capacidad para ofrecer soluciones tecnológicas efectivas y personalizadas.</p>
+        </div>
+    
+        <!-- Sección adicional para más proyectos -->
+        <div class="additional-projects">
+            <h3>Más Proyectos</h3>
+            <p>Además de las certificaciones, he desarrollado una serie de proyectos que puedes ver en la sección de proyectos.</p>
+            <a href="#proyectos">Ver más proyectos</a>
+        </div>
+    </section>
+    
+
+    <button id="toggle-btn">Mostrar más sobre mí</button>
+    <!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+
+
+
+
+
+
+
+
     <!-- Sección Proyectos -->
     <section id="proyectos" class="proyectos-section">
         <h2 data-translate="Proyectos Recientes">Proyectos Recientes</h2>
@@ -183,6 +234,15 @@
                 <h3>Robot Humanoide</h3>
                 <p data-translate="Desarrollo de un robot humanoide programado en Python, con enfoque en movimiento autónomo y reconocimiento de comandos.">Desarrollo de un robot humanoide programado en Python, con enfoque en movimiento autónomo y reconocimiento de comandos.</p>
             </div>
+
+             <!-- Proyecto 7 - VELOXSAFEKEY -->
+             <div class="project-card">
+                <a href="https://velozerick.github.io/VLOXSAFEKEY/" target="_blank">
+                    <img src="img/safe.png" alt="VELOXSAFEKEY" class="project-image">
+                </a>
+                <h3>VELOXSAFEKEY</h3>
+                <p data-translate="Aplicación ar inteligente, desarrollada para manejar luces y puertas.">Aplicación que te permite guadar y generar contraseñas vinculandolas a una cuenta.</p>
+            </div>
         </div>
     </section>
 
@@ -195,7 +255,7 @@
         <form class="contact-form" action="enviar.php" method="post">
             <input type="text" name="nombre" placeholder="Tu nombre" required data-translate="Tu nombre">
             <input type="email" name="email" placeholder="Tu email" required data-translate="Tu email">
-            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required data-translate="Tu mensaje"></textarea>
+            <textarea name="mensaje" rows="5" placeholder="Tu mensaje" "></textarea>
             <button type="submit" data-translate="Enviar mensaje">Enviar mensaje</button>
         </form>
 

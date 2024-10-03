@@ -157,3 +157,50 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.toggle('active');
     });
 });
+
+
+
+
+
+
+
+
+
+const toggleBtn = document.getElementById('toggle-btn');
+const sobreMiSection = document.getElementById('sobre-mi');
+
+toggleBtn.addEventListener('click', () => {
+    if (sobreMiSection.classList.contains('oculto')) {
+        sobreMiSection.classList.remove('oculto');
+        sobreMiSection.classList.add('visible');
+        toggleBtn.textContent = "Ocultar";
+    } else {
+        sobreMiSection.classList.add('oculto');
+        sobreMiSection.classList.remove('visible');
+        toggleBtn.textContent = "Mostrar más sobre mí";
+    }
+});
+
+function openLightbox(img) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  lightbox.style.display = 'block';
+  lightboxImg.src = img.src;
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  lightbox.style.display = 'none';
+}
+
+
+// Selecciona todas las imágenes del proyecto
+const projectImages = document.querySelectorAll('.project-image');
+
+// Añade un evento de clic a cada imagen
+projectImages.forEach(image => {
+    image.addEventListener('click', function(event) {
+        event.preventDefault(); // Evita que el enlace se abra
+        alert('Gracias por tu interés, pero por el momento no se puede visitar el sitio.');
+    });
+});
